@@ -1,0 +1,295 @@
+/* General Body and Layout */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f7f1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f5f5f54b;
+  border-bottom: 1px solid #dddddd4a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #0d3d0f;
+  /* Dark Green */
+}
+
+.predict-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.predict-link:hover {
+  background-color: #45a049;
+}
+
+/* ✅ AI Assistant Icon Styling */
+.ai-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.ai-assistant:hover {
+  transform: scale(1.1);
+}
+
+.ai-assistant img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 80%;
+}
+
+
+/* ✅ AI Popup Box Styling */
+.ai-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 200px;
+  background: #ffffffbe;
+  border-radius: 10px;
+  padding: 15px;
+  display: none;
+  z-index: 998;
+}
+
+.ai-popup h3 {
+  margin-top: 0;
+  color: #4CAF50;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.ai-popup p {
+  margin: 8px 0;
+  font-size: 10px;
+  color: #333;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card,
+.details-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  width: 360px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card h2,
+.details-card h2 {
+  color: #0d3d0f;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.details-card {
+  background-color: #e6f4ea;
+  height: 460px;
+}
+
+.details-card img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.details-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.summary-text {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 12px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Crop List Styling */
+.crop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.crop-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f15f;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.crop-card-content:hover {
+  transform: translateY(-4px);
+}
+
+.crop-image {
+  width: 85px;
+  height: 85px;
+  object-fit: fill;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.crop-card-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+}
+
+.top-card {
+  background-color: #e6f4ea;
+}
+
+.low-card {
+  background-color: #fdecea;
+}
+
+/* AI Tips */
+.ai-tip {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .details-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Rainfall & Drought Section */
+.rainfall-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.rainfall-card {
+  width: 420px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #ccc;
+  min-height: 110px;
+}
+
+.rainfall-forecast-section {
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.rainfall-forecast-section h2,
+.rainfall-card h2 {
+  font-size: 1.8rem;
+  color: #0d3d0f;
+}
+
+.rainfall-card p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.rainfall-drought {
+  background-color: #fdecea;
+}
+
+.rainfall-normal {
+  background-color: #e6f4ea;
+}
+
+/* Dropdown & Button */
+.state-dropdown {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+.rainfall-graph {
+  margin-top: 20px;
+}

@@ -1,0 +1,48 @@
+{
+    "topCrops": [
+        {
+            "crop": "Sugarcane",
+            "yield": 84509.96,
+            "avg_rainfall": 1560.09,
+            "season": "Whole Year",
+            "state": "Manipur"
+        },
+        {
+            "crop": "Sunflower",
+            "yield": 14805.14,
+            "avg_rainfall": 1178.44,
+            "season": "Kharif",
+            "state": "Karnataka"
+        },
+        {
+            "crop": "Potato",
+            "yield": 11541.33,
+            "avg_rainfall": 1485.87,
+            "season": "Whole Year",
+            "state": "Karnataka"
+        }
+    ],
+    "lowCrops": [
+        {
+            "crop": "Bajra",
+            "yield": 2616.1,
+            "avg_rainfall": 1062.36,
+            "season": "Kharif",
+            "state": "Karnataka"
+        },
+        {
+            "crop": "Rice",
+            "yield": 1778.72,
+            "avg_rainfall": 1668.58,
+            "season": "Kharif",
+            "state": "Assam"
+        },
+        {
+            "crop": "Barley",
+            "yield": 1691.05,
+            "avg_rainfall": 1169.94,
+            "season": "Rabi",
+            "state": "Jammu and Kashmir"
+        }
+    ]
+}
